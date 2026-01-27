@@ -33,7 +33,7 @@ public class Policy {
         this.weight = weight;
     }
 
-    // Getters
+    
     public int getPolicyNumber() { return policyNumber; }
     public String getProviderName() { return providerName; }
     public String getFirstName() { return firstName; }
@@ -43,7 +43,7 @@ public class Policy {
     public double getHeight() { return height; }
     public double getWeight() { return weight; }
 
-    // Setters
+    
     public void setPolicyNumber(int policyNumber) { this.policyNumber = policyNumber; }
     public void setProviderName(String providerName) { this.providerName = providerName; }
     public void setFirstName(String firstName) { this.firstName = firstName; }
@@ -53,12 +53,12 @@ public class Policy {
     public void setHeight(double height) { this.height = height; }
     public void setWeight(double weight) { this.weight = weight; }
 
-    // BMI calculation
+    
     public double calculateBMI() {
         return (weight * 703) / (height * height);
     }
 
-    // Policy price calculation
+    
     public double calculatePolicyPrice() {
         double price = 600.0;
         if (age > 50) price += 75;
